@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>dold_ros</name>
+  <version>0.0.1</version>
+  <description>The dold_ros package</description>
+
+  <maintainer email="gwalck@techfak.uni-bielefeld.de">Guillaume Walck</maintainer>
+
+  <license>BSD</license>
+
+  <author email="gwalck@techfak.uni-bielefeld.de">Guillaume Walck</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>dold_msgs</run_depend>
+  <run_depend>dold_driver</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <metapackage/>
+  </export>
+</package>
