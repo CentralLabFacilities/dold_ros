@@ -171,6 +171,14 @@ int run(int argc, char **argv)
   }
   
   dold_msg.inputs.resize(NUM_BUTTONS);
+  for (size_t i = 0; i < NUM_BUTTONS; ++i)
+  {
+    std::stringstream ss;
+    ss << "B" << i;
+    dold_msg.inputs[i].name = ss.str();
+    dold_msg.inputs[i].type = dold_msgs::DoldState::BUTTON;
+    ss.str("");
+  }
   
   while (ros::ok() && found_header) {
     bytes_read = my_serial.read(buffer, PROTOCOL_LENGTH);
